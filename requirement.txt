@@ -1,0 +1,182 @@
+what is full stack development?
+Ans: we are seeing in our day to day life like facebook,instagram etc and these application are developed using
+full stack development.
+it consist of three parts:
+->Client  ->Server  ->Database
+
+what is mean by full stack developer?
+Ans: As a developer one who know to work with client,server and database is known as Full Stack Developer.
+
+what is mean by client?
+Ans: a user one who using his source to operate any application or website which is known as client.
+Example For Client is: Laptop,Mobile,SmartWatch,SmartTv these are the client device.
+
+what is mean by server?
+Ans: As a request taken from the client and processing the request,receiving the response to the client.
+Example: The Programming languages which are used in server such as Node.Js,Python,Java Etc.
+
+what is mean by database?
+Ans: the datas are storing in a place which is known as database
+Example: The Database programming languages are MySql and MongoDB
+
+What is the process of Full Stack Development?
+Ans: the client sends an request and server takes an request and datbase checks that it was present in its container
+if it's there then it returns a response to the client otherwise it gives an error
+Example: Youtube, when you typing an request anything from the client side,and it gives an response with an fraction
+of seconds not only Youtube they are many examples there in the process of Full Stack Development.
+
+what are the specifications we are using in Client,Server and Database side?
+Ans: the specifications that we are using Client,Server and Database Side are
+->Client----> HTML,CSS and JAVASCRIPT
+->Server----> NODE.JS 
+->Database----> MONGODB
+
+what are we going to build?
+Ans: we are going to build (BookMyShow)--> Movie Ticket Booking App.
+
+Designing Of Full Stack Application?
+Ans: The Designing of Full Stack Application is First, [We have to plan]
+-> Create a WireFrame [take a paper and pen to draw the structure and design of website]
+after drawing the structure we get an idea for how to build an website like(for upper menu,logo present in the website).
+-> In that planning we assume first is menu bar in your application and after that we have to place an image in that,
+and next we have to define the size and shape ,paste it in all and place title in that images[Movie Name] like Vettaiyan,
+Indian2 etc. when we click this Movie we have to go another webpage for which theatre,seat booking,payments these are
+the sites we have to plan to build a (website).
+-> for more reference we have to check the other website (how the structure build)?
+-> Take a BookMyShow website this is the final version of the building website.
+
+what is mean by HTML?
+Ans: the word HTML stands for (Hyper Text MarkUp Language) and when the developer writes a code through HTML, the
+browser easily understands it. Browsers Which are used in our daily life are -->[Chrome,Firefox,safari]
+
+what is the structure of HTML?
+Ans: The structure of HTML are head,body and html tags
+->head --> [these are the configurations present in the website].
+->Body --> [these are the structure present in the webite]
+
+today we are going to see how to do menuBar in BookMyShow Website?
+Using {BootStrap} we are going to menuBar in website.
+--> In Bootstrap we are going to use the concept of CSS[Cascading Style Sheet].
+what is mean by cascading Style Sheet?
+Ans: assume we are writing a Book and this Book Consist Of 500pages in these heading The Font size is 15px
+we have to change the font size from 15px --> 18px in these it is difficult to change each time to change the size
+so we have to define the constant value in this we change, automatically it will reflect all sections present in the 
+website. for this thing we are using [CSS].
+-->CSS have Frameworks which have some readymate Frameworks present in the website is known as [BootStrap]
+-->using this framework our websites are easily to develop fastly and we avoid coding inch by inch.
+--> Let's Going to see How to take a BootStrap
+--> we don't need to download the BootstrapDocument and there is a Feature Called [Content Delivery Network].
+-->Copy The Link And Paste In Your [Index.html]. and the location in Bootstrap is [Downloads/CDNvisjsDeliver/FirstLink(Upto style = "relsheet")].
+--> For Recreating the menuBar We are using some Tags like <H1> etc. in the [Index.html]
+<nav> bar,which i am giving an class,<nav class = "navbar navbar-expand-lg navbar-dark" style = "background-color: #333(black)"> </nav>
+the nav,nav bar,nav expand which comes from bootstrap framework. in the docmentation.
+--> after putting navbar we have create a div tag and put class name = "container" to full fill the content in this div tag.
+--> next we put an anchor tag and put <a class ="navbar-brand" href="#" style="color: #f84464 !important; font-weight: bold;">bookMyshow</a>
+--> Next we have to create a button which is responsible to the [bookmyshow name].
+<button class = "navbar-toggler" type = "button" data-bs-toggle ="collapse" data-bs-target="#navbarNav"> 
+<span class = "navbar-toggler-icon"></span> 
+-->for creating the menus we have to put the tags <ul> and <li> and put it in the <div> tag which is
+<div class = "collapse navbar-collapse" id="navbarNav"> inside this we put <ul class="navbar-nav me-auto"> inside this
+<li class="nav-item"><a class="nav-link" href="#" style="color: #fff !important;">Movies</a></li></ul>
+--> Next we have to create a search bar and search button for this, we have to use form tag.
+<form class="d-flex"> <input type="search" class="form-control me-2" placeholder="Search for Movies, Events, Plays">
+next we have to create button for this we use,
+<button class="btn btn-outline-light" type="submit">Search</button>
+</form>
+--> Next Thing we are going to do this The Particular Card
+below the form and nav bar we can put card use div put class = container mt-4
+<div class ="container mt-4"> inside this we should put 
+<div id = "movieCards" class="row"></div>
+we are going to use JAVASCRIPT how to create a card with an dynamic outcome.
+we can use div tag
+<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+Assume that there is a row in this cards present the total row width is 12 in this we split into a s 4 cards
+so the total width of a col is 3 so we put [col-lg-3] in the <div> tag.
+[col-md-4] --> when the screen size is medium each card occupies Four Columns.
+[col-sm-6] --> when the screen size is small each card occupies Six Columns.
+[mb-4] --> each card occupies 4 spaces.
+Next we have to another div class and also put style.
+<div class="card" style="cursor: pointer;">
+<img src="https://via.placeholder.com/150" alt="">
+<div class="card-body">
+<h5 class="card-title"> Indian 2</h5>
+<p class="card-text"> Drama</p>
+</div>
+</div>
+i'm going to duplicates this 4 times and it consist of 4 with a uniform order in the row.
+in this we are giving class name to card and style ="cursor": pointer;--> when the mouse is going to card and it converts from arrow
+to hand.
+next we have to do image tag with source simple placed as placeholder image.
+we have to use a div tag and put class ="card-body" below the card we have to put <h5> tag in title and also put <p>
+tag to define movie name and also which type of journer.
+-->Next we are going to use footer tag to specify their address,retail etc.
+<footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+<section>
+<div class="container text-center text-md-start mt-5">
+<div class="row mt-3">
+<!-- Grid Column -->
+<div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+<!-- Content -->
+<h6 class="text-uppercase fw-bold mb-4">Book My Show</h6>
+<p>
+your go-to platform for booking movie tickets, finding 
+showtimes, and exploring the latest films.
+</p>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+<!-- Links -->
+<h6 class="text-uppercase fw-bold mb-4">Popular Movies</h6>
+<p>
+<a href="#!" class="text-reset">Latest Realeases</a>
+</p>
+<p>
+<a href="#!" class="text-reset">Upcoming Movies</a>
+</p>
+<p>
+<a href="#!" class="text-reset">Top Rated</a>
+</p>
+<p>
+<a href="#!" class="text-reset">Now Showing</a>
+</p>
+</div>
+<!-- Grid column-->
+
+<!-- Grid Column-->
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+<!-- Links -->
+<h6 class="text-uppercase fw-bold mb-4">Contact Us </h6>
+<p>123 Movie Lane, Cinema City, Ny 10012, US </p>
+<p>
+    support@bookmyshow.com
+</p>
+<p>+1 234 567 8900</p>
+<p>+1 234 567 8901</p>
+</div>
+<!-- Grid column -->
+</div>
+</div>
+</section>
+</section>
+<!-- Section: Links-->
+<!-- Copyright-->
+<div class="text-center p-4" style="background-color: rgba(0,0,0,0.5);">
+&copy; 2024 Book My Show:
+<a class="text-reset fw-bold" href="https://www.bookmyshow.com/">bookmyshow.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+Due to this footer tag inside the section is created in that we generate bookMyShow company details like Email,Phone number and 
+also fixing the size of the section as per grid column and also generating class as multiple names in the <div> and <section> tag    
+
+--> Next Step we have to push this source code into github.
+what is mean by github?
+Ans: Github is an version control system, it means that we are writing the document for 10 days. when writing unfortunately First day content of
+the content has [forgot/deleted] it is not possible to retrieve first day content because the content is deleted.
+but version control system is not like that whaen we write each time the document and save that each time for example you save 10 times
+you get 10 saved file you read any file as you wish.
+--> go to github and create a repository named [Learn-with-guvi-book-my-show]
+when we create an empty repository we get three types of link.
