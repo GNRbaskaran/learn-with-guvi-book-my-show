@@ -180,3 +180,5 @@ but version control system is not like that whaen we write each time the documen
 you get 10 saved file you read any file as you wish.
 --> go to github and create a repository named [Learn-with-guvi-book-my-show]
 when we create an empty repository we get three types of link.
+in that we have to commit and push our project file into repository
+After Pushing use netlify app to host our website.
